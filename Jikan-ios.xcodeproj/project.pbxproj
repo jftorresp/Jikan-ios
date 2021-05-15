@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B16F9DB6264F66860053A4B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB5264F66860053A4B1 /* AppDelegate.swift */; };
+		B16F9DB8264F66860053A4B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */; };
+		B16F9DBA264F66860053A4B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB9264F66860053A4B1 /* ViewController.swift */; };
+		B16F9DBD264F66860053A4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DBB264F66860053A4B1 /* Main.storyboard */; };
+		B16F9DC0264F66860053A4B1 /* Jikan_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DBE264F66860053A4B1 /* Jikan_ios.xcdatamodeld */; };
+		B16F9DC2264F66880053A4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DC1264F66880053A4B1 /* Assets.xcassets */; };
+		B16F9DC5264F66880053A4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */; };
+		B16F9DD0264F66880053A4B1 /* Jikan_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DCF264F66880053A4B1 /* Jikan_iosTests.swift */; };
+		B16F9DDB264F66880053A4B1 /* Jikan_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DDA264F66880053A4B1 /* Jikan_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B16F9DCC264F66880053A4B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B16F9DAA264F66860053A4B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B16F9DB1264F66860053A4B1;
+			remoteInfo = "Jikan-ios";
+		};
+		B16F9DD7264F66880053A4B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B16F9DAA264F66860053A4B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B16F9DB1264F66860053A4B1;
+			remoteInfo = "Jikan-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B16F9DB2264F66860053A4B1 /* Jikan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jikan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16F9DB5264F66860053A4B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B16F9DB9264F66860053A4B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B16F9DBC264F66860053A4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B16F9DBF264F66860053A4B1 /* Jikan_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jikan_ios.xcdatamodel; sourceTree = "<group>"; };
+		B16F9DC1264F66880053A4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B16F9DC4264F66880053A4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B16F9DC6264F66880053A4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16F9DCB264F66880053A4B1 /* Jikan-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jikan-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16F9DCF264F66880053A4B1 /* Jikan_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jikan_iosTests.swift; sourceTree = "<group>"; };
+		B16F9DD1264F66880053A4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16F9DD6264F66880053A4B1 /* Jikan-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jikan-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16F9DDA264F66880053A4B1 /* Jikan_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jikan_iosUITests.swift; sourceTree = "<group>"; };
+		B16F9DDC264F66880053A4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B16F9DAF264F66860053A4B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DC8264F66880053A4B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DD3264F66880053A4B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B16F9DA9264F66860053A4B1 = {
+			isa = PBXGroup;
+			children = (
+				B16F9DB4264F66860053A4B1 /* Jikan-ios */,
+				B16F9DCE264F66880053A4B1 /* Jikan-iosTests */,
+				B16F9DD9264F66880053A4B1 /* Jikan-iosUITests */,
+				B16F9DB3264F66860053A4B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B16F9DB3264F66860053A4B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DB2264F66860053A4B1 /* Jikan-ios.app */,
+				B16F9DCB264F66880053A4B1 /* Jikan-iosTests.xctest */,
+				B16F9DD6264F66880053A4B1 /* Jikan-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B16F9DB4264F66860053A4B1 /* Jikan-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DB5264F66860053A4B1 /* AppDelegate.swift */,
+				B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */,
+				B16F9DB9264F66860053A4B1 /* ViewController.swift */,
+				B16F9DBB264F66860053A4B1 /* Main.storyboard */,
+				B16F9DC1264F66880053A4B1 /* Assets.xcassets */,
+				B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */,
+				B16F9DC6264F66880053A4B1 /* Info.plist */,
+				B16F9DBE264F66860053A4B1 /* Jikan_ios.xcdatamodeld */,
+			);
+			path = "Jikan-ios";
+			sourceTree = "<group>";
+		};
+		B16F9DCE264F66880053A4B1 /* Jikan-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DCF264F66880053A4B1 /* Jikan_iosTests.swift */,
+				B16F9DD1264F66880053A4B1 /* Info.plist */,
+			);
+			path = "Jikan-iosTests";
+			sourceTree = "<group>";
+		};
+		B16F9DD9264F66880053A4B1 /* Jikan-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DDA264F66880053A4B1 /* Jikan_iosUITests.swift */,
+				B16F9DDC264F66880053A4B1 /* Info.plist */,
+			);
+			path = "Jikan-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B16F9DB1264F66860053A4B1 /* Jikan-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16F9DDF264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-ios" */;
+			buildPhases = (
+				B16F9DAE264F66860053A4B1 /* Sources */,
+				B16F9DAF264F66860053A4B1 /* Frameworks */,
+				B16F9DB0264F66860053A4B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jikan-ios";
+			productName = "Jikan-ios";
+			productReference = B16F9DB2264F66860053A4B1 /* Jikan-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B16F9DCA264F66880053A4B1 /* Jikan-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16F9DE2264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosTests" */;
+			buildPhases = (
+				B16F9DC7264F66880053A4B1 /* Sources */,
+				B16F9DC8264F66880053A4B1 /* Frameworks */,
+				B16F9DC9264F66880053A4B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B16F9DCD264F66880053A4B1 /* PBXTargetDependency */,
+			);
+			name = "Jikan-iosTests";
+			productName = "Jikan-iosTests";
+			productReference = B16F9DCB264F66880053A4B1 /* Jikan-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B16F9DD5264F66880053A4B1 /* Jikan-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16F9DE5264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosUITests" */;
+			buildPhases = (
+				B16F9DD2264F66880053A4B1 /* Sources */,
+				B16F9DD3264F66880053A4B1 /* Frameworks */,
+				B16F9DD4264F66880053A4B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B16F9DD8264F66880053A4B1 /* PBXTargetDependency */,
+			);
+			name = "Jikan-iosUITests";
+			productName = "Jikan-iosUITests";
+			productReference = B16F9DD6264F66880053A4B1 /* Jikan-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B16F9DAA264F66860053A4B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B16F9DB1264F66860053A4B1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B16F9DCA264F66880053A4B1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B16F9DB1264F66860053A4B1;
+					};
+					B16F9DD5264F66880053A4B1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B16F9DB1264F66860053A4B1;
+					};
+				};
+			};
+			buildConfigurationList = B16F9DAD264F66860053A4B1 /* Build configuration list for PBXProject "Jikan-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B16F9DA9264F66860053A4B1;
+			productRefGroup = B16F9DB3264F66860053A4B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B16F9DB1264F66860053A4B1 /* Jikan-ios */,
+				B16F9DCA264F66880053A4B1 /* Jikan-iosTests */,
+				B16F9DD5264F66880053A4B1 /* Jikan-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B16F9DB0264F66860053A4B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16F9DC5264F66880053A4B1 /* LaunchScreen.storyboard in Resources */,
+				B16F9DC2264F66880053A4B1 /* Assets.xcassets in Resources */,
+				B16F9DBD264F66860053A4B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DC9264F66880053A4B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DD4264F66880053A4B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B16F9DAE264F66860053A4B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16F9DBA264F66860053A4B1 /* ViewController.swift in Sources */,
+				B16F9DC0264F66860053A4B1 /* Jikan_ios.xcdatamodeld in Sources */,
+				B16F9DB6264F66860053A4B1 /* AppDelegate.swift in Sources */,
+				B16F9DB8264F66860053A4B1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DC7264F66880053A4B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16F9DD0264F66880053A4B1 /* Jikan_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16F9DD2264F66880053A4B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16F9DDB264F66880053A4B1 /* Jikan_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B16F9DCD264F66880053A4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B16F9DB1264F66860053A4B1 /* Jikan-ios */;
+			targetProxy = B16F9DCC264F66880053A4B1 /* PBXContainerItemProxy */;
+		};
+		B16F9DD8264F66880053A4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B16F9DB1264F66860053A4B1 /* Jikan-ios */;
+			targetProxy = B16F9DD7264F66880053A4B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B16F9DBB264F66860053A4B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B16F9DBC264F66860053A4B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B16F9DC4264F66880053A4B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B16F9DDD264F66880053A4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B16F9DDE264F66880053A4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B16F9DE0264F66880053A4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B16F9DE1264F66880053A4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B16F9DE3264F66880053A4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jikan-ios.app/Jikan-ios";
+			};
+			name = Debug;
+		};
+		B16F9DE4264F66880053A4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jikan-ios.app/Jikan-ios";
+			};
+			name = Release;
+		};
+		B16F9DE6264F66880053A4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jikan-ios";
+			};
+			name = Debug;
+		};
+		B16F9DE7264F66880053A4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WNP3H89;
+				INFOPLIST_FILE = "Jikan-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jftorresp.Jikan-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jikan-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B16F9DAD264F66860053A4B1 /* Build configuration list for PBXProject "Jikan-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16F9DDD264F66880053A4B1 /* Debug */,
+				B16F9DDE264F66880053A4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16F9DDF264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16F9DE0264F66880053A4B1 /* Debug */,
+				B16F9DE1264F66880053A4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16F9DE2264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16F9DE3264F66880053A4B1 /* Debug */,
+				B16F9DE4264F66880053A4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16F9DE5264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16F9DE6264F66880053A4B1 /* Debug */,
+				B16F9DE7264F66880053A4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B16F9DBE264F66860053A4B1 /* Jikan_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B16F9DBF264F66860053A4B1 /* Jikan_ios.xcdatamodel */,
+			);
+			currentVersion = B16F9DBF264F66860053A4B1 /* Jikan_ios.xcdatamodel */;
+			path = Jikan_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B16F9DAA264F66860053A4B1 /* Project object */;
+}
