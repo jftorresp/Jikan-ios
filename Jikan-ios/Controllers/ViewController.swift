@@ -11,21 +11,32 @@ import Kingfisher
 class ViewController: UIViewController {
     
     @IBOutlet weak var animesCollectionView: UICollectionView!
+    @IBOutlet weak var seasonLastTableView: UITableView!
     
     private var animesViewModel: AnimesViewModel!
     private var dataSource : AnimeCollectionViewDataSource<AnimeCollectionViewCell, AnimeData>!
+    private var tableViewDataSource : SeasonLastTableViewDataSource<SeasonLastTableViewCell, SeasonLastData>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         callToViewModelForUIUpdate()
         
         animesCollectionView.register(UINib(nibName: "AnimeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "topAnimeCollectionCell")
+        
+        seasonLastTableView.register(UINib(nibName: "SeasonLastTableViewCell", bundle: nil), forCellReuseIdentifier: "seasonLastCell")
+        
+        seasonLastTableView.rowHeight = UITableView.automaticDimension
+        seasonLastTableView.estimatedRowHeight = 250
     }
     
     func callToViewModelForUIUpdate() {
         self.animesViewModel = AnimesViewModel()
         self.animesViewModel.bindAnimeViewModelToController = {
             self.updateDataSource()
+        }
+        
+        self.animesViewModel.bindAnimeSeasonViewModelToController = {
+            self.updateDataSourceSeasonLast()
         }
     }
     
@@ -48,6 +59,27 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
             self.animesCollectionView.dataSource = self.dataSource
             self.animesCollectionView.reloadData()
+        }
+    }
+    
+    func updateDataSourceSeasonLast() {
+           
+        if let seasonLastData = self.animesViewModel.seasonData.anime {
+            self.tableViewDataSource = SeasonLastTableViewDataSource(cellIdentifier: "seasonLastCell", items: seasonLastData, configureCell: { (cell, season) in
+                
+                let url = URL(string: season.imageUrl ?? "Null")!
+                cell.seasonImage.kf.indicatorType = .activity
+                cell.seasonImage.kf.setImage(with: url)
+                cell.animeTitle.text = season.title
+                cell.sinopsis.text = season.synopsis!
+                cell.source.text = season.source!
+                cell.type.text = season.type
+            })
+            
+            DispatchQueue.main.async {
+                self.seasonLastTableView.dataSource = self.tableViewDataSource
+                self.seasonLastTableView.reloadData()
+            }
         }
     }
 }

@@ -26,4 +26,19 @@ class APIService: NSObject {
         }.resume()
     }
     
+    func getSeasonLast(completion : @escaping (SeasonsLast) -> ()){
+        
+        let url = URL(string: apiURL + "season/later")!
+        
+        URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+            if let data = data {
+                
+                let jsonDecoder = JSONDecoder()
+                
+                let animeData = try! jsonDecoder.decode(SeasonsLast.self, from: data)
+                    completion(animeData)
+            }
+        }.resume()
+    }
+    
 }
