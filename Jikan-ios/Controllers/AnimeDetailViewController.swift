@@ -42,6 +42,9 @@ class AnimeDetailViewController: UIViewController {
         animeImage.kf.setImage(with: url)
         
         animeTitle.text = anime?.title
+        UIView.animate(withDuration: 5) {
+            self.animeTitle.frame = CGRect(x: 150, y: 300, width: 200, height: 20)
+        }
 
         let delimiter = "to"
         let fromString = anime?.aired.dateString!.components(separatedBy: delimiter)
