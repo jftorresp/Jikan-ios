@@ -101,9 +101,11 @@
 		B16F9DB4264F66860053A4B1 /* Jikan-ios */ = {
 			isa = PBXGroup;
 			children = (
-				B16F9DB5264F66860053A4B1 /* AppDelegate.swift */,
-				B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */,
-				B16F9DB9264F66860053A4B1 /* ViewController.swift */,
+				B16F9DE8264F66A10053A4B1 /* Models */,
+				B16F9DE9264F66B00053A4B1 /* ViewModels */,
+				B16F9DEB264F66C20053A4B1 /* Controllers */,
+				B16F9DEC264F66CE0053A4B1 /* Common */,
+				B16F9DEA264F66B80053A4B1 /* Services */,
 				B16F9DBB264F66860053A4B1 /* Main.storyboard */,
 				B16F9DC1264F66880053A4B1 /* Assets.xcassets */,
 				B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */,
@@ -129,6 +131,44 @@
 				B16F9DDC264F66880053A4B1 /* Info.plist */,
 			);
 			path = "Jikan-iosUITests";
+			sourceTree = "<group>";
+		};
+		B16F9DE8264F66A10053A4B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B16F9DE9264F66B00053A4B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B16F9DEA264F66B80053A4B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B16F9DEB264F66C20053A4B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DB9264F66860053A4B1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B16F9DEC264F66CE0053A4B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DB5264F66860053A4B1 /* AppDelegate.swift */,
+				B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
