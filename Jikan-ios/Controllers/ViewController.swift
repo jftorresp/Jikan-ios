@@ -14,11 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var seasonLastTableView: UITableView!
     
     private var animesViewModel: AnimesViewModel!
-    private var dataSource : AnimeCollectionViewDataSource<AnimeCollectionViewCell, AnimeData>!
+    private var seasonLastViewModel: SeasonLastViewModel!
+    private var animeDetailViewModel: AnimesDetailViewModel!
+    
+    private var dataSource : AnimeCollectionViewDataSource<AnimeCollectionViewCell, TopAnimeData>!
+    private var delegate : AnimeCollectionViewDelegate<TopAnimeData>!
     private var tableViewDataSource : SeasonLastTableViewDataSource<SeasonLastTableViewCell, SeasonLastData>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.animesCollectionView.delegate = self
+        self.seasonLastTableView.delegate = self
         callToViewModelForUIUpdate()
         
         animesCollectionView.register(UINib(nibName: "AnimeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "topAnimeCollectionCell")
@@ -35,7 +42,8 @@ class ViewController: UIViewController {
             self.updateDataSource()
         }
         
-        self.animesViewModel.bindAnimeSeasonViewModelToController = {
+        self.seasonLastViewModel = SeasonLastViewModel()
+        self.seasonLastViewModel.bindAnimeSeasonViewModelToController = {
             self.updateDataSourceSeasonLast()
         }
     }
@@ -54,6 +62,7 @@ class ViewController: UIViewController {
             cell.layer.shadowRadius = 5.0
             cell.layer.shadowOpacity = 1
             cell.layer.masksToBounds = false
+            
         })
         
         DispatchQueue.main.async {
@@ -62,9 +71,20 @@ class ViewController: UIViewController {
         }
     }
     
+    func updateDelegate() {
+        
+        self.delegate = AnimeCollectionViewDelegate(items: self.animesViewModel.animeData.top, didTap: { (anime) in
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = (storyboard.instantiateViewController(withIdentifier: "animeDetailViewController") as? AnimeDetailViewController)!
+            vc.anime = self.animeDetailViewModel.animeDetail
+            self.present(vc, animated: true, completion: nil)
+        })
+    }
+    
     func updateDataSourceSeasonLast() {
            
-        if let seasonLastData = self.animesViewModel.seasonData.anime {
+        if let seasonLastData = self.seasonLastViewModel.seasonData.anime {
             self.tableViewDataSource = SeasonLastTableViewDataSource(cellIdentifier: "seasonLastCell", items: seasonLastData, configureCell: { (cell, season) in
                 
                 let url = URL(string: season.imageUrl ?? "Null")!
@@ -79,6 +99,41 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 self.seasonLastTableView.dataSource = self.tableViewDataSource
                 self.seasonLastTableView.reloadData()
+            }
+        }
+    }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.animeDetailViewModel = AnimesDetailViewModel()
+        self.animeDetailViewModel.callFuncToGetAnimeData(id: self.animesViewModel.animeData.top[indexPath.row].id)
+        self.animeDetailViewModel.bindAnimeDetailViewModelToController = {
+            
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = (storyboard.instantiateViewController(withIdentifier: "animeDetailViewController") as? AnimeDetailViewController)!
+                vc.anime = self.animeDetailViewModel.animeDetail
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.animeDetailViewModel = AnimesDetailViewModel()
+        self.animeDetailViewModel.callFuncToGetAnimeData(id: self.seasonLastViewModel.seasonData.anime![indexPath.row].id)
+        self.animeDetailViewModel.bindAnimeDetailViewModelToController = {
+            
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = (storyboard.instantiateViewController(withIdentifier: "animeDetailViewController") as? AnimeDetailViewController)!
+                vc.anime = self.animeDetailViewModel.animeDetail
+                self.present(vc, animated: true, completion: nil)
             }
         }
     }

@@ -2,40 +2,49 @@
 //  Anime.swift
 //  Jikan-ios
 //
-//  Created by Juan Felipe Torres on 14/05/21.
+//  Created by Juan Felipe Torres on 15/05/21.
 //
 
 import Foundation
 
-//MARK: - Animes
-struct Animes: Decodable {
+//MARK: - Anime
+struct Anime: Decodable {
     
-    let request_hash: String
-    let top: [AnimeData]
-}
-
-//MARK: - AnimeData
-struct AnimeData: Decodable {
-    
-    let id, rank, members: Int
-    let episodes: Int?
-    let endDate: String?
+    let id: Int
     let score: Double?
-    let title, url, imageUrl, type, startDate: String
+    let rank, episodes, scoredBy: Int?
+    let title, url, imageUrl, type, source, status, duration, rating, synopsis: String?
+    let airing: Bool?
+    let aired: Aired
+    let genres: [Genre]?
     
     enum CodingKeys: String, CodingKey {
         case id = "mal_id"
-        case rank
-        case episodes
-        case members
-        case score
+        case scoredBy = "scored_by"
+        case imageUrl = "image_url"
         case title
         case url
-        case imageUrl = "image_url"
         case type
-        case startDate = "start_date"
-        case endDate = "end_date"
+        case source
+        case status
+        case aired
+        case airing
+        case duration
+        case rating
+        case score
+        case rank
+        case synopsis
+        case genres
+        case episodes
     }
 }
 
-
+struct Aired: Decodable {
+    let from, to, dateString: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case from
+        case to
+        case dateString = "string"
+    }
+}

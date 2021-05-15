@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="186" height="271"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-g9-xWv">
+                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-g9-xWv">
                         <rect key="frame" x="10" y="10" width="166" height="251"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="251" id="DJX-OU-KNa"/>
@@ -30,6 +30,9 @@
                         <state key="normal" image="chevron.right.circle.fill" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                         </state>
+                        <connections>
+                            <action selector="animePressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iQA-1T-X9K"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
