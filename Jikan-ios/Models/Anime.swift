@@ -7,14 +7,14 @@
 
 import Foundation
 
-//MARK: - AnimeData
+//MARK: - Animes
 struct Animes: Decodable {
     
     let request_hash: String
     let top: [AnimeData]
 }
 
-//MARK: - Anime
+//MARK: - AnimeData
 struct AnimeData: Decodable {
     
     let id, rank, members: Int

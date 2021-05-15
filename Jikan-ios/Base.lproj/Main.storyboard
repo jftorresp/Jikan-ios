@@ -51,20 +51,47 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-xK-t6K">
+                                <rect key="frame" x="20" y="400" width="374" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyL-uk-lrY">
+                                <rect key="frame" x="20" y="441" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0jY-K3-UR7">
+                                <rect key="frame" x="20" y="483" width="374" height="364"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gmo-DC-JOT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Tp-y4-UTw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jY-K3-UR7" secondAttribute="trailing" constant="20" id="8HO-SY-bOr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t6Q-xK-t6K" secondAttribute="trailing" constant="20" id="Jn4-AD-WuO"/>
                             <constraint firstItem="gmo-DC-JOT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P0A-a5-TPC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0jY-K3-UR7" secondAttribute="bottom" constant="15" id="SE6-dY-RPa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmo-DC-JOT" secondAttribute="trailing" constant="20" id="Xmx-gK-Rtb"/>
                             <constraint firstItem="roT-F7-X09" firstAttribute="top" secondItem="gmo-DC-JOT" secondAttribute="bottom" constant="15" id="Xoe-Ld-Uss"/>
+                            <constraint firstItem="0jY-K3-UR7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bJG-3C-Ke0"/>
+                            <constraint firstItem="t6Q-xK-t6K" firstAttribute="top" secondItem="roT-F7-X09" secondAttribute="bottom" constant="20" id="caI-Bt-jes"/>
+                            <constraint firstItem="t6Q-xK-t6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i4h-gL-AFB"/>
+                            <constraint firstItem="AyL-uk-lrY" firstAttribute="top" secondItem="t6Q-xK-t6K" secondAttribute="bottom" id="mF8-nb-Fza"/>
+                            <constraint firstItem="0jY-K3-UR7" firstAttribute="top" secondItem="AyL-uk-lrY" secondAttribute="bottom" constant="20" id="mzu-Os-4Zn"/>
                             <constraint firstItem="roT-F7-X09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pca-cI-mf8"/>
+                            <constraint firstItem="AyL-uk-lrY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ric-ve-GKf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="roT-F7-X09" secondAttribute="trailing" constant="20" id="uv3-Jt-Kz4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AyL-uk-lrY" secondAttribute="trailing" constant="20" id="zsx-gy-QyT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animesCollectionView" destination="roT-F7-X09" id="3Hj-c9-HP4"/>
+                        <outlet property="seasonLastTableView" destination="0jY-K3-UR7" id="bsk-GH-DA2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
