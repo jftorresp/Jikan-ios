@@ -11,7 +11,7 @@ class APIService: NSObject {
     
     private let apiURL = "https://api.jikan.moe/v3/"
     
-    func getTopAnimes(page: Int, completion : @escaping (Animes) -> ()){
+    func getTopAnimes(page: Int, completion : @escaping (TopAnimes) -> ()){
         
         let url = URL(string: apiURL + "top/anime/\(page)/bypopularity")!
         
@@ -20,7 +20,7 @@ class APIService: NSObject {
                 
                 let jsonDecoder = JSONDecoder()
                 
-                let animeData = try! jsonDecoder.decode(Animes.self, from: data)
+                let animeData = try! jsonDecoder.decode(TopAnimes.self, from: data)
                     completion(animeData)
             }
         }.resume()
@@ -41,4 +41,18 @@ class APIService: NSObject {
         }.resume()
     }
     
+    func getAnimeById(id: Int, completion : @escaping (Anime) -> ()){
+        
+        let url = URL(string: apiURL + "anime/\(id)")!
+        
+        URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+            if let data = data {
+                
+                let jsonDecoder = JSONDecoder()
+                
+                let animeData = try! jsonDecoder.decode(Anime.self, from: data)
+                    completion(animeData)
+            }
+        }.resume()
+    }
 }

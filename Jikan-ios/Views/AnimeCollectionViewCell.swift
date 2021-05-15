@@ -16,5 +16,8 @@ class AnimeCollectionViewCell: UICollectionViewCell {
       
         animeImage.layer.cornerRadius = 15.0
     }
+    
+    @IBAction func animePressed(_ sender: Any) {
+    }
 }
 

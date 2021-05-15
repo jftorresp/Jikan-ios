@@ -14,7 +14,6 @@ class AnimeCollectionViewDataSource<Cell: UICollectionViewCell, T>: NSObject, UI
     private var items : [T]!
     var configureCell : (Cell, T) -> () = {_,_ in }
     
-    
     init(cellIdentifier : String, items : [T], configureCell : @escaping (Cell, T) -> ()) {
         self.cellIdentifier = cellIdentifier
         self.items =  items
@@ -27,16 +26,10 @@ class AnimeCollectionViewDataSource<Cell: UICollectionViewCell, T>: NSObject, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! Cell
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! Cell
        
        let item = self.items[indexPath.row]
        self.configureCell(cell, item)
        return cell
     }
-        
-                
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Handle Tap
-    }
-    
 }
