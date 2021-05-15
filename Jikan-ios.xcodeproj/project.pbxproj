@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F223BA935484D091F7150B9 /* Pods_Jikan_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C57A168DF2EAA0AE985890C /* Pods_Jikan_ios.framework */; };
+		6CE352942B0B7796509B0FEB /* Pods_Jikan_ios_Jikan_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C978D6E622B27152FA46E3 /* Pods_Jikan_ios_Jikan_iosUITests.framework */; };
 		B16F9DB6264F66860053A4B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB5264F66860053A4B1 /* AppDelegate.swift */; };
 		B16F9DB8264F66860053A4B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */; };
 		B16F9DBA264F66860053A4B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DB9264F66860053A4B1 /* ViewController.swift */; };
@@ -16,6 +18,25 @@
 		B16F9DC5264F66880053A4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */; };
 		B16F9DD0264F66880053A4B1 /* Jikan_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DCF264F66880053A4B1 /* Jikan_iosTests.swift */; };
 		B16F9DDB264F66880053A4B1 /* Jikan_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DDA264F66880053A4B1 /* Jikan_iosUITests.swift */; };
+		B16F9DEE264F6BA40053A4B1 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DED264F6BA40053A4B1 /* Anime.swift */; };
+		B16F9DEF264F6BA40053A4B1 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DED264F6BA40053A4B1 /* Anime.swift */; };
+		B16F9DF0264F6BA40053A4B1 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DED264F6BA40053A4B1 /* Anime.swift */; };
+		B16F9DF2264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF1264F6E3B0053A4B1 /* AnimesViewModel.swift */; };
+		B16F9DF3264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF1264F6E3B0053A4B1 /* AnimesViewModel.swift */; };
+		B16F9DF4264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF1264F6E3B0053A4B1 /* AnimesViewModel.swift */; };
+		B16F9DF6264F6EBD0053A4B1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF5264F6EBD0053A4B1 /* APIService.swift */; };
+		B16F9DF7264F6EBD0053A4B1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF5264F6EBD0053A4B1 /* APIService.swift */; };
+		B16F9DF8264F6EBD0053A4B1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DF5264F6EBD0053A4B1 /* APIService.swift */; };
+		B16F9DFC264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DFA264F72D40053A4B1 /* AnimeCollectionViewCell.swift */; };
+		B16F9DFD264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DFA264F72D40053A4B1 /* AnimeCollectionViewCell.swift */; };
+		B16F9DFE264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9DFA264F72D40053A4B1 /* AnimeCollectionViewCell.swift */; };
+		B16F9DFF264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DFB264F72D40053A4B1 /* AnimeCollectionViewCell.xib */; };
+		B16F9E00264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DFB264F72D40053A4B1 /* AnimeCollectionViewCell.xib */; };
+		B16F9E01264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16F9DFB264F72D40053A4B1 /* AnimeCollectionViewCell.xib */; };
+		B16F9E03264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9E02264F75070053A4B1 /* AnimeCollectionViewDataSource.swift */; };
+		B16F9E04264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9E02264F75070053A4B1 /* AnimeCollectionViewDataSource.swift */; };
+		B16F9E05264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16F9E02264F75070053A4B1 /* AnimeCollectionViewDataSource.swift */; };
+		DE245955D54EC150F64BE3EB /* Pods_Jikan_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371665018B7FE83B187AC6D1 /* Pods_Jikan_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CFE89FE75FED406A830E0E8 /* Pods-Jikan-ios-Jikan-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-ios-Jikan-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-Jikan-ios-Jikan-iosUITests/Pods-Jikan-ios-Jikan-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		371665018B7FE83B187AC6D1 /* Pods_Jikan_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jikan_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C978D6E622B27152FA46E3 /* Pods_Jikan_ios_Jikan_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jikan_ios_Jikan_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C57A168DF2EAA0AE985890C /* Pods_Jikan_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jikan_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D03C5A809162AC8EFBD953 /* Pods-Jikan-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-ios.release.xcconfig"; path = "Target Support Files/Pods-Jikan-ios/Pods-Jikan-ios.release.xcconfig"; sourceTree = "<group>"; };
+		9F514BFB17CC2C3400D7C74A /* Pods-Jikan-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-ios.debug.xcconfig"; path = "Target Support Files/Pods-Jikan-ios/Pods-Jikan-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		B16F9DB2264F66860053A4B1 /* Jikan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jikan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16F9DB5264F66860053A4B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16F9DB7264F66860053A4B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +78,15 @@
 		B16F9DD6264F66880053A4B1 /* Jikan-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jikan-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16F9DDA264F66880053A4B1 /* Jikan_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jikan_iosUITests.swift; sourceTree = "<group>"; };
 		B16F9DDC264F66880053A4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16F9DED264F6BA40053A4B1 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		B16F9DF1264F6E3B0053A4B1 /* AnimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesViewModel.swift; sourceTree = "<group>"; };
+		B16F9DF5264F6EBD0053A4B1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B16F9DFA264F72D40053A4B1 /* AnimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B16F9DFB264F72D40053A4B1 /* AnimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		B16F9E02264F75070053A4B1 /* AnimeCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		C381D93E70D25BEF46941D58 /* Pods-Jikan-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-Jikan-iosTests/Pods-Jikan-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D01BB4824D91AB826D71DD9C /* Pods-Jikan-ios-Jikan-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-ios-Jikan-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-Jikan-ios-Jikan-iosUITests/Pods-Jikan-ios-Jikan-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B773CDF262C383F8ABB5F6 /* Pods-Jikan-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jikan-iosTests.release.xcconfig"; path = "Target Support Files/Pods-Jikan-iosTests/Pods-Jikan-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F223BA935484D091F7150B9 /* Pods_Jikan_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE245955D54EC150F64BE3EB /* Pods_Jikan_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +110,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE352942B0B7796509B0FEB /* Pods_Jikan_ios_Jikan_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD69CCDA50677EE4A3C2EC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F514BFB17CC2C3400D7C74A /* Pods-Jikan-ios.debug.xcconfig */,
+				87D03C5A809162AC8EFBD953 /* Pods-Jikan-ios.release.xcconfig */,
+				D01BB4824D91AB826D71DD9C /* Pods-Jikan-ios-Jikan-iosUITests.debug.xcconfig */,
+				0CFE89FE75FED406A830E0E8 /* Pods-Jikan-ios-Jikan-iosUITests.release.xcconfig */,
+				C381D93E70D25BEF46941D58 /* Pods-Jikan-iosTests.debug.xcconfig */,
+				D7B773CDF262C383F8ABB5F6 /* Pods-Jikan-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE2C5043B6BF35C2D46A0AA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C57A168DF2EAA0AE985890C /* Pods_Jikan_ios.framework */,
+				72C978D6E622B27152FA46E3 /* Pods_Jikan_ios_Jikan_iosUITests.framework */,
+				371665018B7FE83B187AC6D1 /* Pods_Jikan_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B16F9DA9264F66860053A4B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +148,8 @@
 				B16F9DCE264F66880053A4B1 /* Jikan-iosTests */,
 				B16F9DD9264F66880053A4B1 /* Jikan-iosUITests */,
 				B16F9DB3264F66860053A4B1 /* Products */,
+				2AD69CCDA50677EE4A3C2EC2 /* Pods */,
+				AE2C5043B6BF35C2D46A0AA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +168,10 @@
 			children = (
 				B16F9DE8264F66A10053A4B1 /* Models */,
 				B16F9DE9264F66B00053A4B1 /* ViewModels */,
+				B16F9DF9264F72B40053A4B1 /* Views */,
 				B16F9DEB264F66C20053A4B1 /* Controllers */,
 				B16F9DEC264F66CE0053A4B1 /* Common */,
-				B16F9DEA264F66B80053A4B1 /* Services */,
+				B16F9DEA264F66B80053A4B1 /* API Service */,
 				B16F9DBB264F66860053A4B1 /* Main.storyboard */,
 				B16F9DC1264F66880053A4B1 /* Assets.xcassets */,
 				B16F9DC3264F66880053A4B1 /* LaunchScreen.storyboard */,
@@ -136,6 +202,7 @@
 		B16F9DE8264F66A10053A4B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B16F9DED264F6BA40053A4B1 /* Anime.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,15 +210,18 @@
 		B16F9DE9264F66B00053A4B1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B16F9DF1264F6E3B0053A4B1 /* AnimesViewModel.swift */,
+				B16F9E02264F75070053A4B1 /* AnimeCollectionViewDataSource.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		B16F9DEA264F66B80053A4B1 /* Services */ = {
+		B16F9DEA264F66B80053A4B1 /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				B16F9DF5264F6EBD0053A4B1 /* APIService.swift */,
 			);
-			path = Services;
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 		B16F9DEB264F66C20053A4B1 /* Controllers */ = {
@@ -171,6 +241,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		B16F9DF9264F72B40053A4B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B16F9DFA264F72D40053A4B1 /* AnimeCollectionViewCell.swift */,
+				B16F9DFB264F72D40053A4B1 /* AnimeCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16F9DDF264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-ios" */;
 			buildPhases = (
+				6474410A625AE8373E0ECC28 /* [CP] Check Pods Manifest.lock */,
 				B16F9DAE264F66860053A4B1 /* Sources */,
 				B16F9DAF264F66860053A4B1 /* Frameworks */,
 				B16F9DB0264F66860053A4B1 /* Resources */,
+				0FB412D889399898F006A790 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16F9DE2264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosTests" */;
 			buildPhases = (
+				0F01062BFA3E89A3D0E5F8F0 /* [CP] Check Pods Manifest.lock */,
 				B16F9DC7264F66880053A4B1 /* Sources */,
 				B16F9DC8264F66880053A4B1 /* Frameworks */,
 				B16F9DC9264F66880053A4B1 /* Resources */,
@@ -213,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16F9DE5264F66880053A4B1 /* Build configuration list for PBXNativeTarget "Jikan-iosUITests" */;
 			buildPhases = (
+				90CF9C81807CB84F2B1B9408 /* [CP] Check Pods Manifest.lock */,
 				B16F9DD2264F66880053A4B1 /* Sources */,
 				B16F9DD3264F66880053A4B1 /* Frameworks */,
 				B16F9DD4264F66880053A4B1 /* Resources */,
+				BFCC31EF143C5F79918C1938 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16F9DC5264F66880053A4B1 /* LaunchScreen.storyboard in Resources */,
+				B16F9DFF264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */,
 				B16F9DC2264F66880053A4B1 /* Assets.xcassets in Resources */,
 				B16F9DBD264F66860053A4B1 /* Main.storyboard in Resources */,
 			);
@@ -284,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16F9E00264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +377,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16F9E01264F72D40053A4B1 /* AnimeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F01062BFA3E89A3D0E5F8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jikan-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FB412D889399898F006A790 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios/Pods-Jikan-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios/Pods-Jikan-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios/Pods-Jikan-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6474410A625AE8373E0ECC28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jikan-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90CF9C81807CB84F2B1B9408 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jikan-ios-Jikan-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFCC31EF143C5F79918C1938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios-Jikan-iosUITests/Pods-Jikan-ios-Jikan-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios-Jikan-iosUITests/Pods-Jikan-ios-Jikan-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jikan-ios-Jikan-iosUITests/Pods-Jikan-ios-Jikan-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B16F9DAE264F66860053A4B1 /* Sources */ = {
@@ -302,7 +492,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16F9DBA264F66860053A4B1 /* ViewController.swift in Sources */,
+				B16F9DFC264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */,
+				B16F9E03264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */,
+				B16F9DF6264F6EBD0053A4B1 /* APIService.swift in Sources */,
+				B16F9DEE264F6BA40053A4B1 /* Anime.swift in Sources */,
 				B16F9DC0264F66860053A4B1 /* Jikan_ios.xcdatamodeld in Sources */,
+				B16F9DF2264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */,
 				B16F9DB6264F66860053A4B1 /* AppDelegate.swift in Sources */,
 				B16F9DB8264F66860053A4B1 /* SceneDelegate.swift in Sources */,
 			);
@@ -312,7 +507,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16F9DF3264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */,
+				B16F9DEF264F6BA40053A4B1 /* Anime.swift in Sources */,
+				B16F9E04264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */,
+				B16F9DF7264F6EBD0053A4B1 /* APIService.swift in Sources */,
 				B16F9DD0264F66880053A4B1 /* Jikan_iosTests.swift in Sources */,
+				B16F9DFD264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +520,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16F9DF4264F6E3B0053A4B1 /* AnimesViewModel.swift in Sources */,
+				B16F9DF0264F6BA40053A4B1 /* Anime.swift in Sources */,
+				B16F9E05264F75070053A4B1 /* AnimeCollectionViewDataSource.swift in Sources */,
+				B16F9DF8264F6EBD0053A4B1 /* APIService.swift in Sources */,
 				B16F9DDB264F66880053A4B1 /* Jikan_iosUITests.swift in Sources */,
+				B16F9DFE264F72D40053A4B1 /* AnimeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +682,7 @@
 		};
 		B16F9DE0264F66880053A4B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F514BFB17CC2C3400D7C74A /* Pods-Jikan-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -496,6 +702,7 @@
 		};
 		B16F9DE1264F66880053A4B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D03C5A809162AC8EFBD953 /* Pods-Jikan-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +722,7 @@
 		};
 		B16F9DE3264F66880053A4B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C381D93E70D25BEF46941D58 /* Pods-Jikan-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +745,7 @@
 		};
 		B16F9DE4264F66880053A4B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B773CDF262C383F8ABB5F6 /* Pods-Jikan-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +768,7 @@
 		};
 		B16F9DE6264F66880053A4B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01BB4824D91AB826D71DD9C /* Pods-Jikan-ios-Jikan-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +789,7 @@
 		};
 		B16F9DE7264F66880053A4B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFE89FE75FED406A830E0E8 /* Pods-Jikan-ios-Jikan-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
