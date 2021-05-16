@@ -10,13 +10,16 @@ import Kingfisher
 
 class ViewController: UIViewController {
     
+    // Outlets
     @IBOutlet weak var animesCollectionView: UICollectionView!
     @IBOutlet weak var seasonLastTableView: UITableView!
     
+    // ViewModels
     private var animesViewModel: AnimesViewModel!
     private var seasonLastViewModel: SeasonLastViewModel!
     private var animeDetailViewModel: AnimesDetailViewModel!
     
+    // Atributes
     private var dataSource : AnimeCollectionViewDataSource<AnimeCollectionViewCell, TopAnimeData>!
     private var delegate : AnimeCollectionViewDelegate<TopAnimeData>!
     private var tableViewDataSource : SeasonLastTableViewDataSource<SeasonLastTableViewCell, SeasonLastData>!
@@ -35,6 +38,8 @@ class ViewController: UIViewController {
         seasonLastTableView.rowHeight = UITableView.automaticDimension
         seasonLastTableView.estimatedRowHeight = 250
     }
+    
+    //MARK: - Update UI methods for CollectionView and TableView data
     
     func callToViewModelForUIUpdate() {
         self.animesViewModel = AnimesViewModel()
@@ -70,18 +75,7 @@ class ViewController: UIViewController {
             self.animesCollectionView.reloadData()
         }
     }
-    
-    func updateDelegate() {
         
-        self.delegate = AnimeCollectionViewDelegate(items: self.animesViewModel.animeData.top, didTap: { (anime) in
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = (storyboard.instantiateViewController(withIdentifier: "animeDetailViewController") as? AnimeDetailViewController)!
-            vc.anime = self.animeDetailViewModel.animeDetail
-            self.present(vc, animated: true, completion: nil)
-        })
-    }
-    
     func updateDataSourceSeasonLast() {
            
         if let seasonLastData = self.seasonLastViewModel.seasonData.anime {
@@ -104,6 +98,7 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: - UICollectionViewDelegate methods
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -122,6 +117,7 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
+//MARK: - UITableViewDelegate methods
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
