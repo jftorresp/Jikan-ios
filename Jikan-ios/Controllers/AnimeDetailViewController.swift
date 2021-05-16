@@ -10,8 +10,10 @@ import Kingfisher
 
 class AnimeDetailViewController: UIViewController {
     
+    // Attributes that receives the data from the selected anime in the initial view controller
     var anime: Anime?
 
+    // Outlets
     @IBOutlet weak var animeImage: UIImageView!
     @IBOutlet weak var animeTitle: UILabel!
     @IBOutlet weak var fromLabel: UILabel!
@@ -43,7 +45,7 @@ class AnimeDetailViewController: UIViewController {
         
         animeTitle.text = anime?.title
         UIView.animate(withDuration: 5) {
-            self.animeTitle.frame = CGRect(x: 150, y: 300, width: 200, height: 20)
+            self.animeTitle.frame = CGRect(x: 220, y: 350, width: 200, height: 20)
         }
 
         let delimiter = "to"
@@ -110,6 +112,11 @@ class AnimeDetailViewController: UIViewController {
     
     @IBAction func backPressed(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = (storyboard.instantiateViewController(withIdentifier: "viewController") as? ViewController)!
+        
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
+        
     }
 }
